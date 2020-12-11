@@ -14,3 +14,4 @@ square.onclick = function(){
       isPlaying = 0
   }
 }
+

@@ -1,0 +1,129 @@
+@keyframes changeColor{
+  0% {
+    background-color: red;
+    width: 10%;
+    height: 10%;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: green;
+  }
+  100% {
+    background-color: blue;
+    width: 90%;
+  }
+}
+
+@keyframes titleAnimation{
+  from {
+      margin-left: 100%;
+  }
+  to {
+      margin-left: 0%;
+  }
+}
+
+.container > * {
+  padding-right: 5%;
+}
+
+
+#title{
+
+  animation-name: titleAnimation;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+}
+
+#main{
+  margin-top: 50px;
+}
+
+.navbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-left: -3%;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar li {
+  display: inline-block;
+  background-color: #3366cc;
+  width: 25%;
+  margin-right: -5px;
+}
+
+.navbar a {
+  display: block;
+  color: #FFFFFF;
+  padding: 10px 0px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #D33E43;
+  color: #000000;
+}
+
+#anim{
+  width: 10%;
+  height: 10%;
+  background-color: red;
+  animation-name: changeColor;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+}
+
+h2 {
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+div.container {
+  padding: 1%;
+  margin: 1%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #CCCCCC;
+  margin: 0;
+}
+
+.container{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+#fun-facts {
+  background-color: #D33E43;
+
+}
+
+#about-me {
+  background-color: #3366cc;
+}
+
+#artists{
+  background-color: #9B7874;
+}
+
+#title {
+  text-align: center;
+  font-family: 'Sansita Swashed', cursive;
+}
