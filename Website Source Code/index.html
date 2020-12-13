@@ -32,12 +32,12 @@
         <div class="carousel-cell"><img src="https://static.addtoany.com/images/dracaena-cinnabari.jpg"/></div>
       </div>
 
-      
+
       <scroll-container>
         <div id="fun-facts" class="container">
           <h2>Fun Facts</h2>
           <img style="width: 10%; height: auto" src="https://cdn.jpegmini.com/user/images/slider_puffin_jpegmini_mobile.jpg">
-          <ul>
+          <ul> 
             <li>The moon is not made out of cheese.</li>
             <li>Money doesn't grow on trees.</li>
           </ul>
@@ -99,7 +99,13 @@
       var flkty = new Flickity ( elem, {
         cellAlign: 'center',
         contain: true,
-        wrapAround: true
+        wrapAround: true,
+        freeScroll: false,
+        pageDots: false,
+        autoPlay: 2000, //ms
+        friction: 1,
+        cellAlign: 'center'
+        //fade, adaptiveHeight, friction: 1.0
       });
     </script>
   </body>
