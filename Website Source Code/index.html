@@ -4,8 +4,12 @@
       My First Webpage
     </title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="index.css"/>
-    <script async src="script.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/css/index.css"/>
+    <link rel="stylesheet" href="src/css/flickity.css" media="screen"/>
+
+
   </head>
   
   <body>
@@ -18,10 +22,16 @@
     </ul>
     
     <div id="main">
-    
       <h1 id="title">My Webpage</h1>
-      
       <hr>
+      
+      <div class="main-gallery">
+        <div class="carousel-cell"><img src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA23689_hires.jpg"/></div>
+        <div class="carousel-cell"><img src="https://www.imagescanada.ca/wp-content/uploads/2019/03/Spectacular-Photos-of-Niagara-Falls-Casinos.jpg"/></div>
+        <div class="carousel-cell"><img src="https://www.w3schools.com/w3css/img_snowtops.jpg"/></div>
+        <div class="carousel-cell"><img src="https://static.addtoany.com/images/dracaena-cinnabari.jpg"/></div>
+      </div>
+
       
       <scroll-container>
         <div id="fun-facts" class="container">
@@ -80,5 +90,17 @@
         
       </scroll-container>
     </div>
+
+    <!-- Javascript -->
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script>
+      var elem = document.querySelector('.main-gallery');
+      var flkty = new Flickity ( elem, {
+        cellAlign: 'center',
+        contain: true,
+        wrapAround: true
+      });
+    </script>
   </body>
 </html>
