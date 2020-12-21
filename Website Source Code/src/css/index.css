@@ -29,54 +29,44 @@
   padding-right: 5%;
 }
 
-#title{
-  animation-name: titleAnimation;
-  animation-iteration-count: 1;
-  animation-duration: 1s;
-}
-
 #main{
   margin-top: 50px;
 }
 
 .navbar{
   position: sticky;
+  display: flex;
   top: 0;
-  width: 100%;
-  margin-left: -3%;
+  background-color: hsl(0, 0%, 11%);
   z-index: 1;
+  align-items: flex-start;
 }
 
-.navbar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+.navbar > * {
+
 }
 
-.navbar li {
-  display: inline-block;
-  background-color: #3366cc;
-  width: 25%;
-  margin-right: -5px;
-}
-
-.navbar a {
+.navbar-item > a  {
   display: block;
   color: #FFFFFF;
-  padding: 10px 0px;
   text-decoration: none;
   text-align: center;
+  padding: 20% 0;
 }
 
-.navbar a:hover {
+.navbar-item {
+  max-width: 25%;
+  width: 10%;
+  height: inherit;
+}
+
+.navbar-item > a:hover {
   background-color: #D33E43;
   color: #000000;
 }
 
 #anim{
-  width: 10%;
-  height: 10%;
+
   background-color: red;
   animation-name: changeColor;
   animation-duration: 4s;
@@ -90,9 +80,15 @@ html {
 }
 
 div.container {
-  padding: 1%;
-  margin: 1%;
+  padding: 0%;
 }
+
+.container > div > h2 {
+  width: 100%;
+  height: 5%;
+  order: 0;
+}
+
 
 body {
   font-family: 'Lato', sans-serif;
@@ -104,15 +100,30 @@ body {
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 #fun-facts {
+  background-image: url('../img/mountains.jpg');
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+  height: 50%;
+  color: white;
   background-color: #D33E43;
-
+  background-size: cover;
+  z-index: -1;
+  padding-left: 50px;
 }
 
 #about-me {
-  background-color: #3366cc;
+  background-image: url('../img/sunflowers.jpg');
+  background-repeat: no-repeat;
+  background-blend-mode: lighten;
+  height: 50%;
+  color: white;
+  background-size: cover;
+  z-index: -1;
+
 }
 
 #artists{
@@ -120,8 +131,15 @@ body {
 }
 
 #title {
+  /*animation-name: titleAnimation;
+  animation-iteration-count: 1;
+  animation-duration: 1s;*/
   text-align: center;
   font-family: 'Sansita Swashed', cursive;
+  font-size: 2em;
+  flex-grow: 1;
+  color: whitesmoke;
+  padding: 1% 0;
 }
 
 * {

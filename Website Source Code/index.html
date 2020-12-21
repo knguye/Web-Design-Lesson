@@ -15,15 +15,14 @@
   <body>
     
     <ul class="navbar">
-      <li> <a href="#fun-facts"> Fun Facts </a> </li>
-      <li> <a href="#artists"> Top Artists</a> </li>  
-      <li> <a href="#about-me"> About Me </a></li>
-      <li> <a href="#contact"> Contact me! </a> </li>
+      <div class="navbar-item" id="title">My Webpage</div>
+      <div class="navbar-item"> <a href="#fun-facts"> Fun Facts </a> </div>
+      <div class="navbar-item"> <a href="#fun-facts"> Fun Facts </a> </div>
+      <div class="navbar-item"> <a href="#fun-facts"> Fun Facts </a> </div>
+      <div class="navbar-item"> <a href="#fun-facts"> Fun Facts </a> </div>
     </ul>
     
     <div id="main">
-      <h1 id="title">My Webpage</h1>
-      <hr>
       
       <div class="main-gallery">
         <div class="carousel-cell"><img src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA23689_hires.jpg"/></div>
@@ -35,12 +34,16 @@
 
       <scroll-container>
         <div id="fun-facts" class="container">
-          <h2>Fun Facts</h2>
-          <img style="width: 10%; height: auto" src="https://cdn.jpegmini.com/user/images/slider_puffin_jpegmini_mobile.jpg">
-          <ul> 
-            <li>The moon is not made out of cheese.</li>
-            <li>Money doesn't grow on trees.</li>
-          </ul>
+          <div>
+            <h2>Fun Facts</h2>
+          </div>
+          
+          <div>
+            <ul> 
+              <li>The moon is not made out of cheese.</li>
+              <li>Money doesn't grow on trees.</li>
+            </ul>
+          </div>
         </div>
         
         <div id="artists" class ="container">
@@ -94,19 +97,8 @@
     <!-- Javascript -->
 
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script>
-      var elem = document.querySelector('.main-gallery');
-      var flkty = new Flickity ( elem, {
-        cellAlign: 'center',
-        contain: true,
-        wrapAround: true,
-        freeScroll: false,
-        pageDots: false,
-        autoPlay: 2000, //ms
-        friction: 1,
-        cellAlign: 'center'
-        //fade, adaptiveHeight, friction: 1.0
-      });
+    <script src="src/js/script.js">
+
     </script>
   </body>
 </html>
