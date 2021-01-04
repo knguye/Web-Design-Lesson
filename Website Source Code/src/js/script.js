@@ -29,3 +29,24 @@ square.onclick = function(){
   }
 }
 
+function changeVideo(video){
+  console.log("Video changed");
+  $('#videos').attr('src', `src/vid/${video}.mp4`);
+  $('#videos').load();
+}
+
+$('#winter-video').click (
+  function (){
+    console.log("Video changed");
+    $('#source').attr('src', `src/vid/winter.mp4`);
+    $('#videos').load();
+  }
+);
+
+$('#guitar-video').click (
+  function (){
+    console.log("Video changed");
+    $('#source').attr('src', `src/vid/guitar.mp4`);
+    $('#videos').load();
+  }
+);

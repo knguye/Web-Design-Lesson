@@ -1,30 +1,46 @@
 <html>
   <head>
     <title>
-      My First Webpage
+      Kevin N's Website
     </title>
     <meta charset="UTF-8">
 
     <!-- CSS -->
     <link rel="stylesheet" href="src/css/index.css"/>
     <link rel="stylesheet" href="src/css/flickity.css" media="screen"/>
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway&display=swap" rel="stylesheet"> 
 
   </head>
   
   <body>
     
     <ul class="navbar">
-      <div class="navbar-item" id="title">My Webpage</div>
+      <div class="navbar-item" id="title"><img src="src/img/logo.png"></div>
       <div class="navbar-item"> <a href="#fun-facts"> Fun Facts </a> </div>
-      <div class="navbar-item"> <a href="#fun-facts"> Fun Facts </a> </div>
-      <div class="navbar-item"> <a href="#fun-facts"> Fun Facts </a> </div>
-      <div class="navbar-item"> <a href="#fun-facts"> Fun Facts </a> </div>
+      <div class="navbar-item"> <a href="#artists"> Artists </a> </div>
+      <div class="navbar-item"> <a href="#about-me"> About Me </a> </div>
+      <div class="navbar-item"> <a href="#video-section"> Videos </a> </div>
     </ul>
-    
+
+    <div id="video-header">
+      <video playsinline autoplay muted loop poster="src/img/northern-lights.jpg" id="bgvid">
+        <source src="src/vid/northern-lights.mp4" type="video/mp4">
+        <source src="src/vid/northern-lights.webm" type="video/webm">
+      </video>
+      
+      <div class="overlay">
+        <h2> Kevin Nguyen </h2>  
+        <p> Founder of Kev's Coding Academy </p>
+        <p> Guitarist, programmer and Tutor</p>
+      </div>
+    </div>
+
     <div id="main">
+      <h2> My Projects </h2>
       
       <div class="main-gallery">
+
         <div class="carousel-cell"><img src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA23689_hires.jpg"/></div>
         <div class="carousel-cell"><img src="https://www.imagescanada.ca/wp-content/uploads/2019/03/Spectacular-Photos-of-Niagara-Falls-Casinos.jpg"/></div>
         <div class="carousel-cell"><img src="https://www.w3schools.com/w3css/img_snowtops.jpg"/></div>
@@ -65,31 +81,20 @@
             I have a cat named Gary, he is 2 years old
           </p>
         </div>
-        
-        <!--<div id="anim">
-          
-        </div>-->
-        
-        
-        <div class="container">
-          <form id="contact">
-            <label for="opinion"> What do you think about this site? </label> <br>
-            <input type="text" id="opinion" name="opinion"> <br> <br>
-            
-            <label for="like"> Did you like this site? </label> 
-            <input type="checkbox" id="like" name="like"> <br> <br>
-            
-            <label> What's your age? </label>
-            <input type="radio" id="under18" name="selections" value="under18">
-            <labelfor="under18"> < 18 </label>
-      
-            <input type="radio" id="18to25" name="selections" value="18to25">
-            <labelfor="under18"> 18-25 </label>
-      
-            <br>
-            <input type="Submit" value="Submit Here">
-          </form>
-        </div>
+               
+
+        <div id="video-section" class="container">
+          <div>
+            <h2> Videos </h2>
+          </div>
+          <video autoplay muted controls poster="src/img/winter.jpg" height="500" id="videos">
+            <source src="src/vid/winter.mp4" id="source" type="video/mp4">
+          </video>
+          <div>
+            <a id="winter-video">Winter</a>
+            <a id="guitar-video">Guitar</a>
+          </div>
+      </div>
         
       </scroll-container>
     </div>

@@ -1,0 +1,108 @@
+<html>
+  <head>
+    <title>
+      My First Webpage
+    </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="src/css/index.css"/>
+    <link rel="stylesheet" href="src/css/flickity.css" media="screen"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway&display=swap" rel="stylesheet"> 
+  </head>
+  
+  <body>
+    
+ <ul class="navbar">
+      <div class="navbar-item" id="title"><img src="src/img/logo.png"></div>
+      <div class="navbar-item"> <a href="#fun-facts"> Fun Facts </a> </div>
+      <div class="navbar-item"> <a href="#artists"> Artists </a> </div>
+      <div class="navbar-item"> <a href="#about-me"> About Me </a> </div>
+      <div class="navbar-item"> <a href="#video-section"> Videos </a> </div>
+    </ul>
+    
+    <div id="main">
+      
+      <div class="main-gallery">
+        <div class="carousel-cell"><img src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA23689_hires.jpg"/></div>
+        <div class="carousel-cell"><img src="https://www.imagescanada.ca/wp-content/uploads/2019/03/Spectacular-Photos-of-Niagara-Falls-Casinos.jpg"/></div>
+        <div class="carousel-cell"><img src="https://www.w3schools.com/w3css/img_snowtops.jpg"/></div>
+        <div class="carousel-cell"><img src="https://static.addtoany.com/images/dracaena-cinnabari.jpg"/></div>
+      </div>
+  
+      <scroll-container>
+        <div id="fun-facts" class="container">
+          <div>
+            <h2>Fun Facts</h2>
+          </div>
+          
+          <div>
+            <img style="width: 10%; height: auto" src="https://cdn.jpegmini.com/user/images/slider_puffin_jpegmini_mobile.jpg">
+          </div>
+          
+          <div>
+            <ul>
+              <li>The moon is not made out of cheese.</li>
+              <li>Money doesn't grow on trees.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div id="artists" class ="container">
+          <div>
+            <h2>My top 5 artists</h2>
+          </div>
+          
+          <div>
+            <ol>
+              <li>Eric Clapton</li>
+              <li>John Mayer</li>
+              <li>Tom Petty</li>
+              <li>Kehlani</li>
+              <li>SZA</li>
+            </ol>
+          </div>
+        </div>
+        
+        
+        <div id="about-me" class="container">
+          <div>
+            <h2> About me </h2>
+          </div>
+          
+          <div>
+            <p>
+              My name is Kevin Nguyen, I like to play guitar and cooking. <br>
+              I have a cat named Gary, he is 2 years old
+            </p>
+          </div>
+
+        </div>
+        
+        
+        <div class="container">
+          <form id="contact">
+            <label for="opinion"> What do you think about this site? </label> <br>
+            <input type="text" id="opinion" name="opinion"> <br> <br>
+            
+            <label for="like"> Did you like this site? </label> 
+            <input type="checkbox" id="like" name="like"> <br> <br>
+            
+            <label> What's your age? </label>
+            <input type="radio" id="under18" name="selections" value="under18">
+            <labelfor="under18"> < 18 </label>
+      
+            <input type="radio" id="18to25" name="selections" value="18to25">
+            <labelfor="under18"> 18-25 </label>
+      
+            <br>
+            <input type="Submit" value="Submit Here">
+          </form>
+        </div>
+      </scroll-container>
+    </div>
+    
+    <!-- Javascript Scripts -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="src/js/script.js">
+  </body>
+</html>
